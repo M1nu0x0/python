@@ -1,0 +1,17 @@
+# 1. Python 소개와 기본
+
+## 1.1 Python 소개
+- Python의 철학과 특징 (PEP 20: The Zen of Python).
+- Python의 활용 분야: 웹 개발, 데이터 과학, 머신러닝, 스크립팅 등.
+- Python의 동작 원리: 인터프리터와 바이트코드.
+- [Python 소개 Docs](https://www.python.org/doc/essays/blurb/)
+
+## 1.2 개발 환경 설정
+- Python 설치와 버전 관리 (`pyenv`, `conda`).
+- 가상환경(`venv`, `virtualenv`) 설정 및 사용법.
+- 패키지 관리 (`pip`, `pipenv`, `poetry`).
+- [Python 환경 설정 Docs](https://docs.python.org/3/tutorial/venv.html)
+
+## 1.3 첫 번째 프로그램
+- Python의 기본 구조 (`print`, `input`).
+- `Hello, World!`와 간단한 계산기 구현.
