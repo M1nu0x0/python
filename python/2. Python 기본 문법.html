@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.18" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>2. Python 기본 문법 | VuePress</title><meta name="description" content="My first VuePress Site">
+    <link rel="preload" href="/assets/style-PoWje89h.css" as="style"><link rel="stylesheet" href="/assets/style-PoWje89h.css">
+    <link rel="modulepreload" href="/assets/app-Dv2S3j9-.js"><link rel="modulepreload" href="/assets/2. Python 기본 문법.html-DExdf0BY.js">
+    <link rel="prefetch" href="/assets/index.html-CFo9upg4.js" as="script"><link rel="prefetch" href="/assets/get-started.html-D7TpcORu.js" as="script"><link rel="prefetch" href="/assets/1. Python 소개와 기본.html-C-emvAKi.js" as="script"><link rel="prefetch" href="/assets/10. Built-in 라이브러리.html-DHTzTgMz.js" as="script"><link rel="prefetch" href="/assets/3. Python 객체 모델.html-CIHD3pT3.js" as="script"><link rel="prefetch" href="/assets/4. 클래스와 객체 지향.html-C2L2_Nhy.js" as="script"><link rel="prefetch" href="/assets/5. Iterable. Iterable. Iterable.html-Du3GMo3T.js" as="script"><link rel="prefetch" href="/assets/6. argparse와 스크립트 실행.html-CorYwGDB.js" as="script"><link rel="prefetch" href="/assets/7. 라이브러리 작성과 관리.html-BTfcxisY.js" as="script"><link rel="prefetch" href="/assets/8. 고급 Python 주제.html-CxBHI98F.js" as="script"><link rel="prefetch" href="/assets/9. 최적화와 성능.html-AtmC6SMj.js" as="script"><link rel="prefetch" href="/assets/index.html-Dysl1ZsM.js" as="script"><link rel="prefetch" href="/assets/404.html-SxMGH6--.js" as="script"><link rel="prefetch" href="/assets/setupDevtools-7MC2TMWH-D9wTUXBL.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container external-link-icon" vp-container><!--[--><header class="vp-navbar" vp-navbar><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/"><img class="vp-site-logo" src="https://vuejs.press/images/hero.png" alt="VuePress"><span class="vp-site-name vp-hide-mobile" aria-hidden="true">VuePress</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="Home"><!---->Home<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/get-started.html" aria-label="Get Started"><!---->Get Started<!----></a></div><div class="vp-navbar-item"><a class="route-link route-link-active auto-link" href="/python/" aria-label="python"><!---->python<!----></a></div><!--]--></nav><!--[--><!--]--><button type="button" class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="Home"><!---->Home<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/get-started.html" aria-label="Get Started"><!---->Get Started<!----></a></div><div class="vp-navbar-item"><a class="route-link route-link-active auto-link" href="/python/" aria-label="python"><!---->python<!----></a></div><!--]--></nav><!--[--><!--]--><ul class="vp-sidebar-items"><!--[--><li><p tabindex="0" class="vp-sidebar-item vp-sidebar-heading">Python <!----></p><ul style="" class="vp-sidebar-children"><!--[--><li><a class="route-link auto-link vp-sidebar-item" href="/python/1.%20Python%20%EC%86%8C%EA%B0%9C%EC%99%80%20%EA%B8%B0%EB%B3%B8.html" aria-label="1. Python 소개와 기본"><!---->1. Python 소개와 기본<!----></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div class="theme-default-content" vp-content><!--[--><!--]--><div><h1 id="_2-python-기본-문법" tabindex="-1"><a class="header-anchor" href="#_2-python-기본-문법"><span>2. Python 기본 문법</span></a></h1><h2 id="_2-1-데이터-타입" tabindex="-1"><a class="header-anchor" href="#_2-1-데이터-타입"><span>2.1 데이터 타입</span></a></h2><ul><li>숫자(<code>int</code>, <code>float</code>, <code>complex</code>), 문자열(<code>str</code>), 불리언(<code>bool</code>), <code>None</code>.</li><li><code>bytes</code>와 <code>bytearray</code>의 차이점.</li><li>형 변환과 타입 확인 (<code>int()</code>, <code>str()</code>, <code>isinstance()</code>).</li><li><a href="https://docs.python.org/3/library/stdtypes.html" target="_blank" rel="noopener noreferrer">Built-in Data Types Docs</a></li></ul><h2 id="_2-2-변수와-연산자" tabindex="-1"><a class="header-anchor" href="#_2-2-변수와-연산자"><span>2.2 변수와 연산자</span></a></h2><ul><li>변수 선언, 네임스페이스, 가비지 컬렉션.</li><li>산술, 비교, 논리, 비트 연산자.</li><li>복합 연산자 (<code>+=</code>, <code>-=</code> 등)와 주의점.</li></ul><h2 id="_2-3-제어문" tabindex="-1"><a class="header-anchor" href="#_2-3-제어문"><span>2.3 제어문</span></a></h2><ul><li>조건문 (<code>if</code>, <code>elif</code>, <code>else</code>).</li><li>반복문 (<code>for</code>, <code>while</code>)과 <code>break</code>, <code>continue</code>, <code>else</code>.</li><li>사람들이 착각하기 쉬운 <code>for</code>의 동작 방식.</li></ul><h2 id="_2-4-함수" tabindex="-1"><a class="header-anchor" href="#_2-4-함수"><span>2.4 함수</span></a></h2><ul><li>함수 정의, 인자 (<code>*args</code>, <code>**kwargs</code>).</li><li>기본값 인자와 키워드 전용 인자 (<code>*, arg</code>).</li><li>함수 객체와 <code>callable()</code>: <ul><li><code>__call__</code> 메서드를 가진 객체의 동작.</li><li><code>callable(object)</code>의 활용.</li></ul></li></ul><h2 id="_2-5-예외-처리" tabindex="-1"><a class="header-anchor" href="#_2-5-예외-처리"><span>2.5 예외 처리</span></a></h2><ul><li><code>try</code>, <code>except</code>, <code>else</code>, <code>finally</code> 구조.</li><li>Built-in Exceptions (ValueError, KeyError, IndexError 등).</li><li>사용자 정의 예외와 예외 계층 설계.</li></ul></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="vp-meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: oxygen0112@naver.com">m1nu0x0</span><!----><!--]--><!--]--></span></div></div></footer><!----><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-Dv2S3j9-.js" defer></script>
+  </body>
+</html>
