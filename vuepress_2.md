@@ -74,3 +74,8 @@ npm i -D gh-pages
 ```bash
 npm run deploy
 ```
+
+## 깃페이지
+아래처럼 `gh-pages` `/(root)`로 설정하지 않으면 `main`의 `/(root)`가 페이지의 메인으로 설정돼서 의도한대로 사이트가 작성되지 않음.
+![alt text](/assets/image3.png)
+의도: 깃허브 레포의 main page(/README.md)와 깃페이지의 main page(/docs/README.md)의 분리
